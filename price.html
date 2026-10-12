@@ -1,457 +1,316 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>الأسعار — Digital Room</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الباقات — Digital Room</title>
+    <!-- نفس الخط الموجود في الصفحة الرئيسية: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet"
-        href="price.css"
     >
-
+    <link rel="stylesheet" href="price.css">
+    <!-- توحيد الخط في الصفحة كلها -->
+    <style>
+        .pricing-page,
+        .pricing-page * {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 </head>
-
-
 <body class="pricing-page">
-
-
+    <!-- Header -->
     <header class="pricing-header">
-
         <div class="pricing-nav">
-
-            <a
-                href="index.html"
-                class="logo"
-            >
+            <a href="index.html" class="logo">
                 Digital Room
             </a>
-
-
             <button
                 class="menu-btn"
                 id="menuBtn"
                 aria-label="فتح القائمة"
+                aria-expanded="false"
             >
-
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
-
         </div>
-
-
-        <nav
-            class="mobile-menu"
-            id="mobileMenu"
-        >
-
-            <a href="index.html">
-                الرئيسية
-            </a>
-
-            <a href="index.html#services">
-                خدماتنا
-            </a>
-
-            <a href="index.html#services">
-                طريقة عملنا
-            </a>
-
-            <a href="price.html">
-                أسعارنا
-            </a>
-
-            <a href="index.html#footer-social">
-                تواصل معنا
-            </a>
-
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="index.html">الرئيسية</a>
+            <a href="index.html#services">خدماتنا</a>
+            <a href="index.html#process">طريقة عملنا</a>
+            <a href="price.html">باقاتنا</a>
+            <a href="index.html#footer-social">تواصل معنا</a>
         </nav>
-
     </header>
-
-
     <main>
-
-
+        <!-- عنوان صفحة الباقات -->
         <section class="pricing-hero">
-
-            <p class="section-label">
-                أسعارنا
-            </p>
-
-
+            <p class="section-label"></p>
             <h1>
-                باقات واضحة، بدون تعقيد.
+                باقات تطوير المواقع
             </h1>
-
-
-            <p class="pricing-description">
-                اختر الباقة المناسبة لمشروعك، وابدأ في تحويل فكرتك
-                إلى منتج رقمي واضح واحترافي.
-            </p>
-
         </section>
-
-
+        <!-- باقات تطوير المواقع -->
         <section class="pricing-section">
-
             <div class="pricing-container">
-
-
-                <!-- الباقة الاحترافية - الأولى -->
-
-                <article class="pricing-card featured">
-
-                    <div class="card-top">
-
-                        <span class="plan-name">
-                            الاحترافية
-                        </span>
-
-
-                        <div class="price">
-
-                            <strong>
-                                8,000
-                            </strong>
-
-                            <span>
-                                EGP
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card-content">
-
-                        <p class="card-description">
-                            لظهور رقمي أقوى وتجربة أكثر احترافية.
-                        </p>
-
-
-                        <ul>
-
-                            <li>
-                                موقع متجاوب حتى 8 صفحات
-                            </li>
-
-                            <li>
-                                تصميم UI مخصص وعصري
-                            </li>
-
-                            <li>
-                                Responsive Design
-                            </li>
-
-                            <li>
-                                ربط Google Maps
-                            </li>
-
-                            <li>
-                                ربط حسابات السوشيال ميديا
-                            </li>
-
-                            <li>
-                                Animations &amp; Interactions متقدمة
-                            </li>
-
-                            <li>
-                                تهيئة أساسية لمحركات البحث (Basic SEO)
-                            </li>
-
-                            <li>
-                                دعم اللغتين العربية والإنجليزية
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                    <button
-                        class="plan-btn"
-                        data-plan="الباقة الاحترافية"
-                    >
-                        اختر الباقة
-                    </button>
-
-                </article>
-
-
-                <!-- الباقة الأساسية - الثانية -->
-
+                <!-- الباقة الأساسية -->
                 <article class="pricing-card">
-
                     <div class="card-top">
-
-                        <span class="plan-name">
-                            الأساسية
-                        </span>
-
-
-                        <div class="price">
-
-                            <strong>
-                                5,000
-                            </strong>
-
-                            <span>
-                                EGP
-                            </span>
-
-                        </div>
-
+                        <span class="plan-name">الأساسية</span>
                     </div>
-
-
                     <div class="card-content">
-
                         <p class="card-description">
                             مثالية للتواجد الرقمي السريع والشركات الناشئة.
                         </p>
-
-
                         <ul>
-
-                            <li>
-                                موقع متجاوب حتى 5 صفحات
-                            </li>
-
-                            <li>
-                                تصميم UI مخصص
-                            </li>
-
-                            <li>
-                                ربط Google Maps
-                            </li>
-
-                            <li>
-                                ربط حسابات السوشيال ميديا
-                            </li>
-
-                            <li>
-                                أساسيات الـ SEO
-                            </li>
-
-                            <li>
-                                Animations بسيطة
-                            </li>
-
+                            <li>موقع متجاوب حتى 5 صفحات</li>
+                            <li>تصميم UI مخصص</li>
+                            <li>ربط Google Maps</li>
+                            <li>ربط حسابات السوشيال ميديا</li>
+                            <li>أساسيات الـ SEO</li>
+                            <li>Animations بسيطة</li>
                         </ul>
-
                     </div>
-
-
-                    <button
-                        class="plan-btn"
-                        data-plan="الباقة الأساسية"
-                    >
+                    <button class="plan-btn" data-plan="الباقة الأساسية">
                         اختر الباقة
                     </button>
-
                 </article>
-
-
-                <!-- الباقة المميزة - الثالثة -->
-
-                <article class="pricing-card">
-
+                <!-- الباقة الاحترافية -->
+                <article class="pricing-card featured">
                     <div class="card-top">
-
-                        <span class="plan-name">
-                            المميزة
-                        </span>
-
-
-                        <div class="price">
-
-                            <strong>
-                                12,000
-                            </strong>
-
-                            <span>
-                                EGP
-                            </span>
-
-                        </div>
-
+                        <span class="plan-name">الاحترافية</span>
                     </div>
-
-
                     <div class="card-content">
-
+                        <p class="card-description">
+                            لظهور رقمي أقوى وتجربة أكثر احترافية.
+                        </p>
+                        <ul>
+                            <li>موقع متجاوب حتى 8 صفحات</li>
+                            <li>تصميم UI مخصص وعصري</li>
+                            <li>Responsive Design</li>
+                            <li>ربط Google Maps</li>
+                            <li>ربط حسابات السوشيال ميديا</li>
+                            <li>Animations &amp; Interactions متقدمة</li>
+                            <li>تهيئة أساسية لمحركات البحث (Basic SEO)</li>
+                            <li>دعم اللغتين العربية والإنجليزية</li>
+                        </ul>
+                    </div>
+                    <button class="plan-btn" data-plan="الباقة الاحترافية">
+                        اختر الباقة
+                    </button>
+                </article>
+                <!-- الباقة المميزة -->
+                <article class="pricing-card">
+                    <div class="card-top">
+                        <span class="plan-name">المميزة</span>
+                    </div>
+                    <div class="card-content">
                         <p class="card-description">
                             حل متكامل لبناء حضور رقمي متقدم ومميز.
                         </p>
-
-
                         <ul>
-
-                            <li>
-                                موقع متجاوب بعدد صفحات غير محدود
-                            </li>
-
-                            <li>
-                                تصميم UI/UX مخصص بالكامل
-                            </li>
-
-                            <li>
-                                Responsive Design
-                            </li>
-
-                            <li>
-                                تجربة مستخدم متقدمة
-                            </li>
-
-                            <li>
-                                ربط Google Maps
-                            </li>
-
-                            <li>
-                                ربط حسابات السوشيال ميديا
-                            </li>
-
-                            <li>
-                                Animations &amp; Interactions متقدمة
-                            </li>
-
-                            <li>
-                                دعم اللغتين العربية والإنجليزية
-                            </li>
-
-                            <li>
-                                تهيئة متقدمة لمحركات البحث
-                            </li>
-
-                            <li>
-                                تحسين سرعة وأداء الموقع
-                            </li>
-
-                            <li>
-                                نظام لإدارة وتحديث المحتوى
-                            </li>
-
-                            <li>
-                                صفحات مخصصة حسب احتياجات النشاط
-                            </li>
-
-                            <li>
-                                اختبار شامل قبل الإطلاق
-                            </li>
-
-                            <li>
-                                دعم فني لمدة 30 يومًا بعد التسليم
-                            </li>
-
+                            <li>موقع متجاوب بعدد صفحات غير محدود</li>
+                            <li>تصميم UI/UX مخصص بالكامل</li>
+                            <li>Responsive Design</li>
+                            <li>تجربة مستخدم متقدمة</li>
+                            <li>ربط Google Maps</li>
+                            <li>ربط حسابات السوشيال ميديا</li>
+                            <li>Animations &amp; Interactions متقدمة</li>
+                            <li>دعم اللغتين العربية والإنجليزية</li>
+                            <li>تهيئة متقدمة لمحركات البحث</li>
+                            <li>تحسين سرعة وأداء الموقع</li>
+                            <li>نظام لإدارة وتحديث المحتوى</li>
+                            <li>صفحات مخصصة حسب احتياجات النشاط</li>
+                            <li>اختبار شامل قبل الإطلاق</li>
+                            <li>دعم فني لمدة 30 يومًا بعد التسليم</li>
                         </ul>
-
                     </div>
-
-
-                    <button
-                        class="plan-btn"
-                        data-plan="الباقة المميزة"
-                    >
+                    <button class="plan-btn" data-plan="الباقة المميزة">
                         اختر الباقة
                     </button>
-
                 </article>
-
-
             </div>
-
         </section>
-
-
+        <!-- خدمات التسويق الرقمي -->
+        <section class="digital-marketing-section" dir="rtl">
+            <div class="marketing-container">
+                <div class="marketing-header">
+                    
+                    <h2>
+                        خدمات تسويق رقمي مُفصلة حسب احتياجك
+                    </h2>
+                    <p class="marketing-description">
+                        مش بس بنصمم ونطور مواقع، بنقدم لك خدمات تسويق رقمي
+                        متكاملة تساعدك تبني هويتك، توصل لجمهورك المستهدف،
+                        وتحقق أهداف مشروعك.
+                    </p>
+                </div>
+                <div class="marketing-grid">
+                    <!-- التصميم البصري -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M12 19l-7 3 2-7"/>
+                                <path d="M18 13l-5-5 5-5 3 3z"/>
+                                <path d="M2 12l7-7 5 5-7 7z"/>
+                            </svg>
+                        </div>
+                        <h3>التصميم البصري</h3>
+                        <p>
+                            تصميم بوستات، ستوريز، وهويات بصرية احترافية
+                            تعزز حضورك وتجذب جمهورك المستهدف.
+                        </p>
+                    </article>
+                    <!-- صناعة وكتابة المحتوى -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <path d="M14 2v6h6"/>
+                                <path d="M8 13h8"/>
+                                <path d="M8 17h5"/>
+                                <path d="M8 9h2"/>
+                            </svg>
+                        </div>
+                        <h3>صناعة وكتابة المحتوى</h3>
+                        <p>
+                            إعداد خطط محتوى ابتكارية، كتابة نصوص إعلانية
+                            ومنشورات تفاعلية تعبر عن هوية علامتك.
+                        </p>
+                    </article>
+                    <!-- إدارة الحملات الإعلانية -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M3 11l18-5-5 18-4-8-9-5z"/>
+                                <path d="M12 16 21 6"/>
+                                <path d="M5 12l1 7 5-3"/>
+                            </svg>
+                        </div>
+                        <h3>إدارة الحملات الإعلانية</h3>
+                        <p>
+                            إعداد وإدارة إعلانات ممولة مستهدفة على منصات
+                            التواصل ومحركات البحث لضمان أعلى عائد على الاستثمار.
+                        </p>
+                    </article>
+                    <!-- الاستشارات والاستراتيجية -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="12" cy="12" r="1"/>
+                                <path d="m16 8 5-5"/>
+                                <path d="M17 3h4v4"/>
+                            </svg>
+                        </div>
+                        <h3>الاستشارات والاستراتيجية</h3>
+                        <p>
+                            دراسة السوق والمنافسين ووضع خطة تسويقية شاملة
+                            تضمن نمو مشروعك واستمراريته.
+                        </p>
+                    </article>
+                    <!-- إدارة الحسابات والتفاعل -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>
+                                <path d="M8 12h.01"/>
+                                <path d="M12 12h.01"/>
+                                <path d="M16 12h.01"/>
+                            </svg>
+                        </div>
+                        <h3>إدارة الحسابات والتفاعل</h3>
+                        <p>
+                            متابعة حساباتك، الرد الفوري والاحترافي على الرسائل
+                            والتعليقات، وبناء علاقة قوية مع عملائك.
+                        </p>
+                    </article>
+                    <!-- التصوير والمونتاج -->
+                    <article class="marketing-card">
+                        <div class="marketing-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <rect x="3" y="5" width="13" height="14" rx="2"/>
+                                <path d="m16 10 5-3v10l-5-3z"/>
+                                <path d="m8 9 4 3-4 3z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>التصوير والمونتاج</h3>
+                        <p>
+                            تصوير احترافي وإنتاج فيديوهات ريلز وتيك توك
+                            ومونتاج عصري يخلق تفاعلًا عاليًا.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- التواصل -->
         <section class="pricing-cta">
-
             <div>
-
                 <p>
                     مش متأكد أي باقة مناسبة لمشروعك؟
                 </p>
-
-
                 <h2>
                     خلينا نتكلم عن مشروعك.
                 </h2>
-
-
-                <a
-                    href="index.html#footer-social"
-                    class="cta-button"
-                >
+                <a href="index.html#footer-social" class="cta-button">
                     تواصل معنا
                 </a>
-
             </div>
-
         </section>
-
-
     </main>
-
-
+    <!-- Footer -->
     <footer class="pricing-footer">
-
-        <h3>
-            Digital Room
-        </h3>
-
-
+        <h3>Digital Room</h3>
         <p>
             تصميم وتطوير منتجات رقمية واضحة وعملية.
         </p>
-
-
         <div class="footer-links">
-
-            <a href="index.html">
-                الرئيسية
-            </a>
-
-            <a href="price.html">
-                أسعارنا
-            </a>
-
-            <a href="index.html#services">
-                خدماتنا
-            </a>
-
-            <a href="index.html#process">
-                طريقة عملنا
-            </a>
-
+            <a href="index.html">الرئيسية</a>
+            <a href="price.html">باقاتنا</a>
+            <a href="index.html#services">خدماتنا</a>
+            <a href="index.html#process">طريقة عملنا</a>
         </div>
-
-
         <p class="copyright">
             © 2026 Digital Room
         </p>
-
     </footer>
-
-
-    <div
-        class="modal"
-        id="planModal"
-    >
-
-        <div class="modal-box">
-
-
+    <!-- نافذة اختيار الباقة -->
+    <div class="modal" id="planModal" aria-hidden="true">
+        <div
+            class="modal-box"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="selectedPlan"
+        >
             <button
                 class="close-modal"
                 id="closeModal"
@@ -459,37 +318,20 @@
             >
                 ×
             </button>
-
-
             <p class="section-label">
                 اختيارك
             </p>
-
-
             <h2 id="selectedPlan">
                 الباقة
             </h2>
-
-
             <p>
                 ممتاز! ابدأ معنا وسنتواصل معك لمناقشة تفاصيل مشروعك.
             </p>
-
-
-            <a
-                href="index.html#footer-social"
-                class="modal-button"
-            >
+            <a href="index.html#footer-social" class="modal-button">
                 تواصل معنا
             </a>
-
         </div>
-
     </div>
-
-
     <script src="price.js"></script>
-
 </body>
-
 </html>
