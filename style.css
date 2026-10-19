@@ -955,3 +955,336 @@ h1 {
 .btn-outline:hover{
   color: white;
 }
+
+/* ===== DIGITAL ROOM SERVICES ===== */
+
+.services-section {
+  background: var(--cream);
+  padding: 90px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section .container {
+  width: min(100% - 96px, 1180px);
+  margin-inline: auto;
+}
+
+.services-heading {
+  color: var(--navy);
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 900;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 0 55px;
+  letter-spacing: -1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1000px;
+  margin-inline: auto;
+  align-items: stretch;
+}
+
+.service-card {
+  background: var(--navy);
+  color: #fff;
+  border: 2px solid var(--navy);
+  border-radius: 24px;
+  padding: 42px 34px 35px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(16, 33, 63, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 38px rgba(16, 33, 63, 0.15);
+}
+
+.service-card.featured {
+  background: #fff;
+  color: var(--navy);
+  border-color: var(--navy);
+  box-shadow: 0 14px 32px rgba(16, 33, 63, 0.12);
+}
+
+.service-icon {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  font-size: 58px;
+  margin-bottom: 24px;
+}
+
+.service-card h3 {
+  font-size: clamp(23px, 2.3vw, 30px);
+  line-height: 1.55;
+  font-weight: 900;
+  margin: 0 0 22px;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  text-align: right;
+}
+
+.service-card li {
+  position: relative;
+  padding-right: 23px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: inherit;
+}
+
+.service-card li::before {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 175px;
+  min-height: 52px;
+  padding: 12px 25px;
+  margin-top: auto;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 0.25s ease,
+              color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.service-card.featured .service-btn {
+  background: var(--orange);
+  color: var(--navy);
+}
+
+.service-btn:hover {
+  background: var(--orange);
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+.service-card.featured .service-btn:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 900px) {
+  .services-section {
+    padding: 75px 0 85px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 34px 24px 30px;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+  }
+
+  .service-card li {
+    font-size: 16px;
+  }
+
+  .service-icon {
+    font-size: 52px;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+  .services-section {
+    padding: 65px 0 75px;
+  }
+
+  .services-section .container {
+    width: calc(100% - 40px);
+  }
+
+  .services-heading {
+    font-size: 29px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    max-width: 440px;
+  }
+
+  .service-card {
+    padding: 30px 24px;
+    border-radius: 21px;
+  }
+
+  .service-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .service-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 48px;
+    margin-bottom: 18px;
+  }
+
+  .service-card h3 {
+    font-size: 23px;
+    line-height: 1.6;
+    min-height: 0;
+    margin-bottom: 18px;
+  }
+
+  .service-card ul {
+    margin-bottom: 25px;
+  }
+
+  .service-card li {
+    font-size: 15px;
+    line-height: 1.9;
+    padding-right: 20px;
+    margin-bottom: 9px;
+  }
+
+  .service-card li::before {
+    top: 11px;
+  }
+
+  .service-btn {
+    min-width: 160px;
+    min-height: 48px;
+    font-size: 16px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+
+@media (max-width: 380px) {
+  .services-section .container {
+    width: calc(100% - 30px);
+  }
+
+  .services-heading {
+    font-size: 25px;
+  }
+
+  .service-card {
+    padding: 26px 19px;
+  }
+
+  .service-card h3 {
+    font-size: 21px;
+  }
+
+  .service-card li {
+    font-size: 14px;
+  }
+}
+
+/* ===== SERVICES CARDS FIX ===== */
+
+/* زيادة المسافة بين المربعين */
+.services-section .services-grid {
+  gap: 40px !important;
+  max-width: 1080px !important;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* المربعين أبيض في الوضع الطبيعي */
+.services-section .service-card,
+.services-section .service-card.featured {
+  background: #ffffff !important;
+  color: var(--navy) !important;
+  border: 2px solid var(--navy) !important;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* النصوص والعناوين داخل المربعين */
+.services-section .service-card h3,
+.services-section .service-card li {
+  color: inherit !important;
+}
+
+/* المربع يتحول للكحلي عند الوقوف عليه */
+.services-section .service-card:hover,
+.services-section .service-card.featured:hover {
+  background: var(--navy) !important;
+  color: #ffffff !important;
+  border-color: var(--navy) !important;
+}
+
+/* الأيقونات تفضل برتقالي */
+.services-section .service-icon {
+  color: var(--orange) !important;
+}
+
+/* الأزرار برتقالي في الوضع الطبيعي */
+.services-section .service-btn,
+.services-section .service-card.featured .service-btn {
+  background: var(--orange) !important;
+  color: var(--navy) !important;
+}
+
+/* الزر يبقى أبيض لما المربع يتحول للكحلي */
+.services-section .service-card:hover .service-btn {
+  background: #ffffff !important;
+  color: var(--navy) !important;
+}
+
+/* الموبايل */
+@media (max-width: 700px) {
+  .services-section .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px !important;
+    width: 100%;
+  }
+}

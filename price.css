@@ -1,16 +1,27 @@
 :root {
+
     --navy: #102544;
+
     --navy-light: #19375f;
+
     --orange: #f47745;
+
     --cream: #f7f4ee;
+
     --card: #ffffff;
+
     --text: #142542;
+
     --muted: #626b7b;
+
     --border: #d9dde4;
+
 }
 
 .pricing-page {
+
     margin: 0;
+
     padding: 0;
 
     background: var(--cream);
@@ -18,36 +29,53 @@
     color: var(--text);
 
     font-family:
+
         Arial,
+
         "Tahoma",
+
         sans-serif;
 
     line-height: 1.7;
+
 }
 
 .pricing-page *,
+
 .pricing-page *::before,
+
 .pricing-page *::after {
+
     box-sizing: border-box;
+
 }
 
 .pricing-page a {
+
     text-decoration: none;
+
     color: inherit;
+
 }
 
 .pricing-page button {
+
     font-family: inherit;
+
 }
 
 .pricing-header {
+
     background: var(--cream);
 
     position: relative;
+
     z-index: 50;
+
 }
 
 .pricing-nav {
+
     max-width: 1200px;
 
     margin: auto;
@@ -63,19 +91,25 @@
     justify-content: space-between;
 
     direction: ltr;
+
 }
 
 .logo {
+
     font-size: 30px;
 
     font-weight: 800;
 
     color: var(--navy);
+
     margin-left: 20px;
+
 }
 
 .menu-btn {
+
     width: 48px;
+
     height: 48px;
 
     border: 0;
@@ -93,10 +127,13 @@
     gap: 6px;
 
     align-items: center;
+
 }
 
 .menu-btn span {
+
     width: 30px;
+
     height: 3px;
 
     background: var(--navy);
@@ -104,36 +141,48 @@
     border-radius: 5px;
 
     transition: .3s;
+
 }
 
 .menu-btn.active span:nth-child(1) {
+
     transform: translateY(9px) rotate(45deg);
+
 }
 
 .menu-btn.active span:nth-child(2) {
+
     opacity: 0;
+
 }
 
 .menu-btn.active span:nth-child(3) {
+
     transform: translateY(-9px) rotate(-45deg);
+
 }
 
 .mobile-menu {
+
     position: absolute;
 
     top: 100%;
 
-    right: 20px;
+    right: 48px;
+    top: 92px;
 
-    width: 320px;
+  width: min(330px, calc(100vw - 48px));
+
 height: 320px;
+
     padding: 25px 30px 15px;
 
     background: var(--navy);
 
-    border-radius: 18px;
+    border-radius: 20px;
 
     box-shadow:
+
         0 20px 50px rgba(0,0,0,.12);
 
     display: flex;
@@ -149,33 +198,45 @@ height: 320px;
     transform: translateY(-15px);
 
     transition: .3s;
+
 }
 
 .mobile-menu.open {
+
     opacity: 1;
 
     visibility: visible;
 
     transform: translateY(0);
+
 }
 
 .mobile-menu a {
+
     padding: 12px 15px;
+
 text-align: left;
+
 font-weight: 800;
+
 font-size: 20px;
+
     color: white;
 
     border-radius: 10px;
 
     font-size: 17px;
+
 }
 
 .mobile-menu a:hover {
+
     background: transparent;
+
 }
 
 .pricing-hero {
+
     max-width: 1000px;
 
     margin: auto;
@@ -183,11 +244,15 @@ font-size: 20px;
     text-align: center;
 
     padding:
+
         90px 25px
+
         60px;
+
 }
 
 .section-label {
+
     color: var(--orange);
 
     font-size: 70px;
@@ -195,9 +260,11 @@ font-size: 20px;
     font-weight: 700;
 
     margin: 0 0 15px;
+
 }
 
 .pricing-hero h1 {
+
     margin: 0;
 
     color: var(--navy);
@@ -207,30 +274,41 @@ font-size: 20px;
     line-height: 1.15;
 
     font-weight: 800;
+
 }
 
 .pricing-description {
+
     max-width: 650px;
 
     margin:
-        25px auto
-        0;
+
+        25px auto;
 
     color: var(--muted);
 
-    font-size: 20px;
+    font-size: 60px;
+
+    font-weight: bold;
 
     line-height: 1.9;
+
 }
 
 .pricing-section {
+
     padding:
+
         20px
+
         30px
+
         100px;
+
 }
 
 .pricing-container {
+
     max-width: 1150px;
 
     margin: auto;
@@ -238,14 +316,17 @@ font-size: 20px;
     display: grid;
 
     grid-template-columns:
+
         repeat(3, 1fr);
 
     align-items: stretch;
 
     gap: 25px;
+
 }
 
 .pricing-card {
+
     position: relative;
 
     background: var(--card);
@@ -263,11 +344,15 @@ font-size: 20px;
     flex-direction: column;
 
     transition:
+
         transform .3s ease,
+
         box-shadow .3s ease;
+
 }
 
 .pricing-card:hover {
+
     transform: translateY(-8px);
 
     background: var(--navy);
@@ -275,29 +360,39 @@ font-size: 20px;
     color: white;
 
     box-shadow:
+
         0 20px 45px rgba(16,37,68,.12);
+
 }
 
 .pricing-card.featured {
+
     background: white;
 
     color: var(--text);
 
     border:
+
         1px solid
+
         var(--border);
 
     transform: translateY(-15px);
 
     box-shadow:
+
         0 25px 55px rgba(16,37,68,.2);
+
 }
 
 .pricing-card.featured:hover {
+
     transform: translateY(-22px);
+
 }
 
 .popular {
+
     position: absolute;
 
     top: 20px;
@@ -309,7 +404,9 @@ font-size: 20px;
     color: white;
 
     padding:
+
         5px
+
         12px;
 
     border-radius: 4px;
@@ -317,19 +414,25 @@ font-size: 20px;
     font-size: 13px;
 
     font-weight: 700;
+
 }
 
 .card-top {
+
     padding-bottom: 25px;
 
     border-bottom: 1px solid var(--border);
+
 }
 
 .featured .card-top {
+
    border-bottom: 1px solid var(--border);
+
 }
 
 .plan-name {
+
     display: block;
 
     font-size: 19px;
@@ -337,70 +440,95 @@ font-size: 20px;
     font-weight: 700;
 
     margin-bottom: 15px;
+
 }
 
 .price {
+
     display: flex;
 
     align-items: baseline;
 
     gap: 8px;
+
 }
 
 .price strong {
+
     font-size: 48px;
 
     line-height: 1;
 
     font-weight: 800;
+
 }
 
 .price span {
+
     color: var(--muted);
 
     font-size: 15px;
+
 }
 
 .featured .price span {
+
     color:
+
         rgba(255,255,255,.65);
+
 }
 
 .card-content {
+
     flex: 1;
 
     padding-top: 25px;
+
 }
 
 .card-description {
+
     color: var(--muted);
 
     font-size: 15px;
 
     margin:
+
         0
+
         0
+
         20px;
 
     opacity: 1;
+
     visibility: visible;
+
 }
 
 .featured .card-description {
+
     color: var(--muted);
+
     opacity: 1;
+
     visibility: visible;
+
 }
 
 .card-content ul {
+
     margin: 0;
 
     padding: 0;
 
     list-style: none;
+
 }
 
 .card-content li {
+
     position: relative;
 
     padding-right: 25px;
@@ -408,9 +536,11 @@ font-size: 20px;
     margin-bottom: 15px;
 
     font-size: 15px;
+
 }
 
 .card-content li::before {
+
     content: "✓";
 
     position: absolute;
@@ -420,9 +550,11 @@ font-size: 20px;
     color: var(--orange);
 
     font-weight: 800;
+
 }
 
 .plan-btn {
+
     width: 100%;
 
     border: 1px solid var(--border);
@@ -442,63 +574,83 @@ font-size: 20px;
     border-radius: 3px;
 
     transition: .3s;
+
 }
 
 .plan-btn:hover {
+
     background: var(--navy);
 
     color: white;
 
     border-color: var(--navy);
+
 }
 
 .featured .plan-btn {
+
     background: var(--orange);
 
     border-color: var(--orange);
 
     color: white;
+
 }
 
 .featured .plan-btn:hover {
+
     background: white;
 
     color: var(--navy);
+
 }
 
 .pricing-cta {
+
     background: var(--orange);
 
     padding:
+
         100px
+
         30px;
 
     text-align: center;
+
 }
 
 .pricing-cta p {
+
     margin: 0 0 10px;
 
     color: var(--navy);
 
     font-size: 18px;
+
 }
 
 .pricing-cta h2 {
+
     margin:
+
         0
+
         0
+
         30px;
 
     color: var(--navy);
 
     font-size:
+
         clamp(35px, 5vw, 60px);
 
     line-height: 1.2;
+
 }
 
 .cta-button {
+
     display: inline-flex;
 
     align-items: center;
@@ -506,7 +658,9 @@ font-size: 20px;
     justify-content: center;
 
     padding:
+
         15px
+
         45px;
 
     background: var(--navy);
@@ -520,17 +674,23 @@ font-size: 20px;
     font-weight: 700;
 
     transition: .3s;
+
 }
 
 .cta-button:hover {
+
     transform: translateY(-3px);
 
     box-shadow:
+
         0 10px 25px
+
         rgba(207, 208, 209, 0.25);
+
 }
 
 .pricing-footer {
+
     background: var(--navy);
 
     color: white;
@@ -538,25 +698,37 @@ font-size: 20px;
     text-align: center;
 
     padding:
+
         70px
+
         30px;
+
 }
 
 .pricing-footer h3 {
+
     font-size: 28px;
 
     margin:
+
         0
+
         0
+
         10px;
+
 }
 
 .pricing-footer > p {
+
     color:
+
         rgba(255,255,255,.7);
+
 }
 
 .footer-links {
+
     display: flex;
 
     justify-content: center;
@@ -566,31 +738,43 @@ font-size: 20px;
     gap: 25px;
 
     margin:
+
         30px
+
         0;
+
 }
 
 .footer-links a {
+
     color:
+
         rgba(255,255,255,.85);
+
 }
 
 .footer-links a:hover {
+
     color: var(--orange);
+
 }
 
 .copyright {
+
     font-size: 13px;
 
     opacity: .5;
+
 }
 
 .modal {
+
     position: fixed;
 
     inset: 0;
 
     background:
+
         rgba(8,20,38,.7);
 
     display: flex;
@@ -608,15 +792,19 @@ font-size: 20px;
     transition: .3s;
 
     z-index: 100;
+
 }
 
 .modal.show {
+
     opacity: 1;
 
     visibility: visible;
+
 }
 
 .modal-box {
+
     position: relative;
 
     width: 100%;
@@ -634,29 +822,37 @@ font-size: 20px;
     transform: translateY(20px);
 
     transition: .3s;
+
 }
 
 .modal.show .modal-box {
+
     transform: translateY(0);
+
 }
 
 .modal-box h2 {
+
     color: var(--navy);
 
     font-size: 35px;
 
     margin: 10px 0;
+
 }
 
 .modal-box p:not(.section-label) {
+
     color: var(--muted);
 
     font-size: 17px;
 
     margin-bottom: 25px;
+
 }
 
 .close-modal {
+
     position: absolute;
 
     top: 15px;
@@ -676,9 +872,11 @@ font-size: 20px;
     cursor: pointer;
 
     color: var(--navy);
+
 }
 
 .modal-button {
+
     display: inline-block;
 
     background: var(--orange);
@@ -686,30 +884,39 @@ font-size: 20px;
     color: white;
 
     padding:
+
         13px
+
         35px;
 
     border-radius: 5px;
 
     font-weight: 700;
+
 }
 
 @media (max-width: 900px) {
 
     .pricing-container {
+
         grid-template-columns: 1fr;
 
         max-width: 550px;
+
     }
 
     .pricing-card.featured {
+
         transform: none;
 
         order: -1;
+
     }
 
     .pricing-card.featured:hover {
+
         transform: translateY(-8px);
+
     }
 
 }
@@ -717,86 +924,366 @@ font-size: 20px;
 @media (max-width: 600px) {
 
     .pricing-nav {
+
         min-height: 85px;
 
         padding:
+
             0
+
             20px;
 
         direction: ltr;
+
     }
 
     .logo {
+
         font-size: 25px;
+
     }
 
     .pricing-hero {
+
         padding:
+
             60px
+
             20px
+
             40px;
+
     }
 
     .pricing-hero h1 {
+
         font-size: 40px;
+
     }
 
     .pricing-description {
+
         font-size: 16px;
+
     }
 
     .pricing-section {
+
         padding:
+
             10px
+
             20px
+
             70px;
+
     }
 
     .pricing-card {
+
         padding: 28px;
 
         min-height: auto;
+
     }
 
     .price strong {
+
         font-size: 42px;
+
     }
 
     .pricing-cta {
+
         padding:
+
             75px
+
             20px;
+
     }
 
     .pricing-footer {
+
         padding:
+
             55px
+
             20px;
+
     }
 
 }
 
 .cta-button,
+
 .cta-button:hover,
+
 .cta-button:focus,
+
 .cta-button:active {
+
     color: #fff !important;
+
     text-decoration: none;
+
 }
+
 .pricing-card.featured:hover {
+
     background: var(--navy);
+
     color: white;
+
     transform: translateY(-8px);
+
 }
 
 .pricing-card.featured:hover .card-description {
+
     color: white;
+
 }
 
 .pricing-card.featured:hover .price span {
+
     color: rgba(255,255,255,.7);
+
 }
 
 .pricing-card.featured:hover .card-top {
+
     border-color: rgba(255,255,255,.18);
+
+}
+
+/* =========================================
+   خدمات التسويق الرقمي - Digital Marketing
+   ========================================= */
+
+.digital-marketing-section {
+    padding: 70px 30px 100px;
+    background: #fff;
+    color: var(--text);
+    direction: rtl;
+}
+
+.marketing-container {
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.marketing-header {
+    max-width: 900px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.marketing-header .section-label {
+    margin: 0 0 12px;
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.marketing-header h2 {
+    margin: 0 0 18px;
+    color: var(--navy);
+    font-size: clamp(28px, 3.2vw, 42px);
+    line-height: 1.4;
+    font-weight: 800;
+}
+
+.marketing-description {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
+}
+
+.marketing-card {
+    min-width: 0;
+    min-height: 360px;
+    padding: 38px 30px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background: #fff;
+    border: 1.5px solid #d9dde4;
+    border-radius: 22px;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.marketing-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(244, 119, 69, .55);
+    box-shadow: 0 18px 38px rgba(16, 37, 68, .08);
+}
+
+.marketing-icon {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f47716;
+}
+
+.marketing-icon svg {
+    display: block;
+    width: 76px;
+    height: 76px;
+    max-width: 100%;
+    overflow: visible;
+}
+
+.marketing-card h3 {
+    margin: 0 0 18px;
+    color: var(--navy);
+    font-size: clamp(21px, 2vw, 29px);
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.marketing-card p {
+    max-width: 390px;
+    margin: 0;
+    color: #52617c;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+/* Tablets */
+@media (max-width: 1000px) {
+    .digital-marketing-section {
+        padding: 60px 24px 80px;
+    }
+
+    .marketing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .marketing-card {
+        min-height: 340px;
+        padding: 32px 24px;
+    }
+
+    .marketing-card p {
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .digital-marketing-section {
+        padding: 45px 18px 65px;
+    }
+
+    .marketing-header {
+        margin-bottom: 30px;
+    }
+
+    .marketing-header h2 {
+        font-size: 27px;
+    }
+
+    .marketing-description {
+        font-size: 16px;
+    }
+
+    .marketing-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .marketing-card {
+        min-height: auto;
+        padding: 30px 22px;
+        border-radius: 18px;
+    }
+
+    .marketing-icon {
+        width: 76px;
+        height: 76px;
+        margin-bottom: 18px;
+    }
+
+    .marketing-icon svg {
+        width: 66px;
+        height: 66px;
+    }
+
+    .marketing-card h3 {
+        margin-bottom: 12px;
+        font-size: 23px;
+    }
+
+    .marketing-card p {
+        font-size: 16px;
+        line-height: 1.85;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marketing-card {
+        transition: none;
+    }
+
+    .marketing-card:hover {
+        transform: none;
+    }
+}
+
+/* Hover Effect - Digital Marketing Cards */
+
+.marketing-card {
+    background-color: #ffffff;
+    border: 1.5px solid #d9dde4;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.marketing-card h3,
+.marketing-card p,
+.marketing-card .marketing-icon {
+    transition: color 0.3s ease;
+}
+
+/* عند الوقوف على الكارت */
+.marketing-card:hover {
+    background-color: #102544;
+    border-color: #102544;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(16, 37, 68, 0.18);
+}
+
+/* تغيير لون العنوان */
+.marketing-card:hover h3 {
+    color: #ffffff;
+}
+
+/* تغيير لون الوصف */
+.marketing-card:hover p {
+    color: #e0e7f1;
+}
+
+/* تغيير لون الأيقونة */
+.marketing-card:hover .marketing-icon {
+    color: #ff7918;
 }
